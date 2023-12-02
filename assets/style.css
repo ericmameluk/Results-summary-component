@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'HankenGrotesk', sans-serif;
+    src: url(/assets/HankenGrotesk-VariableFont_wght.ttf);
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var();
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var();
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-lavender);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+    /* Primary colors */
+    --light-red: hsl(0, 100%, 67%);
+    --rangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradient colors */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-color: var(--pale-blue);
+
+    font-family: 'HankenGrotesk', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-section {
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    margin: auto;
+    max-width: 1440px;
+}
+
+.main-section .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 20px;
+    padding: 40px;
+    width: 320px;
+}
+
+.main-section .result h2 {
+    color: var(--light-lavender);
+}
+
+.main-section .result .result-number {
+    font-size: 3rem;
+}
+
+.main-section .result .result-circle {
+    background: linear-gradient(var(--violet-blue), var(--Persian-blue));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.main-section .result .result-number {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    width: 250px;
+}
+
+.summary h2 {
+    text-align: left;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
+}
+
+.summary .qualities-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary .qualities-list .reaction {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light-red);
+}
+
+.summary .qualities-list .memory {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--rangey-yellow);
+}
+
+.summary .qualities-list .verbal {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--green-teal);
+}
+
+.summary .qualities-list .visual {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cobalt-blue);
+}
+
+.summary .qualities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.summary .summary-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.summary .continue {
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+
+    font-weight: 700;
+
+    background: linear-gradient(to bottom, var(--dark-gray-blue), var(--dark-gray-blue));
+    color: var(--white);
+    transition: .3s ease;
+
+    border-radius: 100px;
+    padding-block: 15px;
+}
+
+.summary .continue:hover {
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+}

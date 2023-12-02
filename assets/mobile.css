@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main-section .result {
+        width: 100vw;
+    }
+
+    .main-section .summary {
+        width: 100vw;
+        padding-inline: 2rem;
+    }
+}
